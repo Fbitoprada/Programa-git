@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Historias Clínicas</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="img/logo.png" alt="Logo" />
+      <h1>Gestión de Historias Clínicas</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="pacientes.html">Pacientes</a></li>
+        <li><a class="activo" href="historias.html">Historias Clínicas</a></li>
+        <li><a href="citas.html">Citas</a></li>
+        <li><a href="reportes.html">Reportes</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Registro de Historia Clínica</h2>
+
+    <form>
+      <label for="paciente">Paciente (Nombre o CC):</label>
+      <input type="text" id="paciente" placeholder="Buscar paciente"/>
+
+      <label for="fecha">Fecha de Consulta:</label>
+      <input type="date" id="fecha"/>
+
+      <label for="motivo">Motivo de Consulta:</label>
+      <input type="text" id="motivo"/>
+
+      <label for="diagnostico">Diagnóstico:</label>
+      <input type="text" id="diagnostico"/>
+
+      <label for="tratamiento">Tratamiento:</label>
+      <input type="text" id="tratamiento"/>
+
+      <label for="observaciones">Observaciones:</label>
+      <input type="text" id="observaciones"/>
+
+      <button type="submit">Guardar Historia</button>
+    </form>
+
+    <h3>Historias Registradas</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Paciente</th>
+          <th>Fecha</th>
+          <th>Motivo</th>
+          <th>Diagnóstico</th>
+          <th>Tratamiento</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Juan Pérez</td>
+          <td>2025-08-06</td>
+          <td>Dolor de cabeza</td>
+          <td>Migraña</td>
+          <td>Paracetamol</td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Sistema de Gestión Médica</p>
+  </footer>
+
+</body>
+</html>
